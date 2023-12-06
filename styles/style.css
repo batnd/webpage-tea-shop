@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*.navbar {*/
+/*    --bs-navbar-padding-y: 0.75rem;*/
+/*}*/
+/*.container-fluid {*/
+/*    padding-right: calc(var(--bs-gutter-x) * .63);*/
+/*    padding-left: calc(var(--bs-gutter-x) * .63);*/
+/*}*/
+
+/* Стили для стрелок слайдера slick */
+.slick-arrow {
+    border: 1px solid #076BFF;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.left-Arrow-Position {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+    z-index: 1;
+
+    transition: background-color .15s;
+}
+.left-Arrow-Position svg {
+    fill: #595555;
+
+    transition: fill .15s;
+}
+.left-Arrow-Position:hover {
+    background-color: #076BFF;
+}
+.left-Arrow-Position:hover svg {
+    fill: white;
+}
+.right-Arrow-Position {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
+    z-index: 1;
+
+    transition: background-color .15s;
+}
+.right-Arrow-Position svg {
+    fill: #595555;
+
+    transition: fill .15s;
+}
+.right-Arrow-Position:hover {
+    background-color: #076BFF;
+}
+.right-Arrow-Position:hover svg {
+    fill: white;
+}
+
+/* Стили для аккордеона */
+.ui-accordion .ui-accordion-header:not(#ui-id-1) {
+    margin-top: 16px;
+}
+
+.ui-icon,
+.ui-widget-content .ui-icon {
+    background: url("../images/arrow-down.png") no-repeat;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+
+    width: 20px;
+    height: 12px;
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+    background: url("../images/arrow-down.png") no-repeat;
+}
+
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+    background: url("../images/arrow-up.png") no-repeat;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+}
+
+.img1.slick-slide.slick-current.slick-active {
+    object-position: 200px;
+}
+
+
+/* Корректировки для адаптива слайдера */
+
+@media screen and (max-width: 1199px) {
+    .imgSlide2 {
+        object-position: -250px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .imgSlide1 {
+        object-position: -375px;
+    }
+    .imgSlide2 {
+        object-position: -250px;
+    }
+    .imgSlide3 {
+        object-position: -250px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .imgSlide2 {
+        object-position: -408px;
+    }
+    .imgSlide3 {
+        object-position: -410px;
+    }
+    .slick-arrow {
+        width: 30px;
+        height: 30px;
+    }
+    .slick-arrow svg {
+        width: 10px;
+        height: 15px;
+
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .imgSlide2 {
+        object-position: -490px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .imgSlide2 {
+        object-position: -620px;
+    }
+    .imgSlide3 {
+        object-position: -550px;
+    }
+}
+
+/* Стили для popup */
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    /* ideally, transition speed should match zoom duration */
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.myAdditionMarginBottom {
+    /*margin-bottom: 72px;*/
+}
