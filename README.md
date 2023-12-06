@@ -4,15 +4,14 @@
 
 ## Внешний вид
 
-![project-screen](project-image-1.jpg)
-![project-screen](project-image-2.jpg)
+![project-screen](project-image.jpg)
 
 ## Выполненные задачи:
-- Вёрстка адаптивной (от 321px) веб-страницы магазина чая;
-- Практика адаптивной верстки;
+- Вёрстка адаптивной веб-страницы магазина чая;
+- Практика адаптивной верстки (от 321px);
 - Использование Bootstrap, jQueryUI;
 - Практика использования JavaScript для реализации необходимого функционала (обработка событий, изменение структуры DOM-элементов);
-- Практика использования библиотек JavaScript (jQueryUi, Slick, Animate.css, wow.js, Magnific Popup).
+- Практика применения библиотек JavaScript (jQueryUi, Slick, Animate.css, wow.js, Magnific Popup).
 
 ## Используемые технологии:
 * HTML
